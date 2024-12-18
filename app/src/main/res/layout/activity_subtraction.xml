@@ -7,35 +7,44 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CALCULATOR"
+        android:text="Add"
         android:textAlignment="center"
         android:textSize="40dp"
         />
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="wrap_content"
+    <EditText
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="+"
-        android:id="@+id/add1"
-        android:layout_marginBottom="10dp"
+        android:hint="Enter num1"
+        android:id="@+id/num1"
+        android:inputType="number"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter num2"
+        android:id="@+id/num2"
+        android:inputType="number"
         />
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="-"
-        android:id="@+id/sub1"
+        android:id="@+id/sub"
         android:layout_marginBottom="10dp"
         />
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="X"
-        android:id="@+id/mul1"
+        android:text="BACK"
+        android:id="@+id/back"
         android:layout_marginBottom="10dp"
-        /> <androidx.appcompat.widget.AppCompatButton
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="/"
-    android:id="@+id/div1"
-    android:layout_marginBottom="10dp"
-    />
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/result"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        />
 </LinearLayout>
